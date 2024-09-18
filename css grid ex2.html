@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Grid com Colunas de Tamanhos Diferentes</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 100px 2fr 1fr;
+        gap: 15px;
+      }
+
+      .grid-item {
+        background-color: lightcoral;
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">Coluna 1 (100px)</div>
+      <div class="grid-item">Coluna 2 (2fr)</div>
+      <div class="grid-item">Coluna 3 (1fr)</div>
+    </div>
+  </body>
+</html>
