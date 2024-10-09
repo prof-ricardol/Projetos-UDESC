@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display:flex;
+        }
+        .left, .right{
+            flex-grow: 1;
+            flex-shrink:1;
+            background-color: cadetblue;
+            padding:20px;
+        }
+        @media(max-width:600px){
+            .flex-container{
+                flex-direction: column;
+            }
+            .left, .right{
+                padding:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="left">Coluna Esquerda</div>
+        <div class="right">Coluna Direita</div>
+    </div>
+</body>
+</html>
