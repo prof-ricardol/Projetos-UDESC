@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Areas</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 20vh 80vh;
+            grid-template-areas: 'b b a'
+                                 'b b c';
+        }
+        .cabecalho{
+            grid-area: a;
+            background-color: blue;
+        }
+        .menu{
+            grid-area: b;
+            background-color: blueviolet;
+        }
+        .conteudo{
+            grid-area: c;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cabecalho">A</div>
+        <div class="menu">B</div>
+        <div class="conteudo">C</div>
+    </div>
+</body>
+</html>
