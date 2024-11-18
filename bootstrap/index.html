@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Exemplo com Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .full-vh {
+      height: 100vh;
+    }
+    .footer {
+      height: 30vh;
+    }
+    .bg-section-1 {
+      background: url('fundo.jpg') no-repeat center center/cover;
+      color: white;
+    }
+    .text-center-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    .logo{
+            width: 10%;
+            height: auto;
+        }
+    .navbar-custom .nav-link {
+      color: white; /* Cor branca para os links */
+      font-weight: bold;
+     
+    }
+    .navbar-custom .nav-link:hover {
+      color: #ddd; /* Cor mais clara ao passar o mouse */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu Horizontal -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-custom">
+    <div class="container-fluid">
+      <img src="logo.webp" class="img-fluid rounded-circle" style="width: 5%; height: auto; margin-right: 10%;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pratos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Drinks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Primeira Seção -->
+  <section class="full-vh bg-section-1">
+    <div class="text-center-section">
+        <h1 style="font-size: 3em;">Bistrô Paris</h1>
+        <p style="font-size: 2em;">Uma verdadeira experiência gastronômica</p>
+    </div>
+  </section>
+
+  <!-- Segunda Seção -->
+  <section class="full-vh d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <p>O Bistrô Paris é um dos mais tradicionais restaurantes da Grande São Paulo, especializados na cozinha francesa. 
+            Entre as delícias servidas está o Camembert Gratinée Au Miel, carro chefe da casa, servido aos domingos e feriados.
+            Também aos finais de semana, é servido o prato Tartare de Filet Mignon, especialidade do chefe. Dica: se sua intenção for pedir o carro-chefe da casa, 
+            o Filet Mignon en Crôute, é preciso reservar com 24 horas de antecedência.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="drink.jpg" alt="Imagem" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terceira Seção -->
+  <section class="full-vh d-flex align-items-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="prato.jpg" alt="Imagem" class="img-fluid">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <p>Assim como o poeta Rimbaud relata as viagens marítimas do seu barco, numa trajetória onírica e encantadora, 
+            da mesma forma é experienciar os Drinks do Bistrô Paris. Um deleite que todos os entusiastas da gastronomia deveriam provar. 
+            A bebida carro chefe nos jantares da casa é o espumante Máscara de Ferro Brut (R$ 160), produzido em Pinto Bandeira.
+            Um Drink refrescante que reúne a cada taça história, qualidade e técnica</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer bg-dark text-white">
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-md-6 d-flex align-items-center">
+          <p>Bistrô Paris. Tel: (32) 5432-9876. Av. Comendador Antônio Fontelles, 512.
+            Horários: Seg. a Dom. das 11h30 às 15h00.</p>
+        </div>
+        <div class="col-md-6 d-flex  align-items-center">
+          <img src="logo.webp" alt="Imagem" class="img-fluid rounded-circle" style="width: 30%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
